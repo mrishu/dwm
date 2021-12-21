@@ -1,0 +1,59 @@
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# -- Volume Controls --
+super + {Up,Down}
+	pamixer -{i,d} 2; pkill -RTMIN+1 dwmblocks
+XF86Audio{Raise,Lower}Volume
+	pamixer -{i,d} 2; pkill -RTMIN+1 dwmblocks
+XF86AudioMute
+	pamixer --toggle-mute; pkill -RTMIN+1 dwmblocks
+
+# -- MPD Controls --
+XF86AudioPlay
+	mpc toggle
+
+# -- Brightness Controls --
+super + {Right,Left}
+	brightnessctl set {+5,5-}; pkill -RTMIN+2 dwmblocks
+XF86MonBrightness{Up,Down}
+	brightnessctl set {+5,5-}; pkill -RTMIN+2 dwmblocks
+
+
+# Change wallpaper
+super + Next
+	feh --bg-fill --random $HOME/Pictures/Wallpapers
+
+# Open ncmpcpp
+super + n
+	st -c ncmpcpp -t ncmpcpp -e ncmpcpp
+
+# Take Screenshots
+Print
+	maim > ~/Pictures/Screenshots/"Screenshot-$(date +%H:%M:%S-%Y-%m-%d).png" && notify-send "Screenshot Taken"
+
+shift + Print
+	maim -s > ~/Pictures/Screenshots/"Screenshot-$(date +%H:%M:%S-%Y-%m-%d).png" && notify-send "Screenshot Taken"
+
+# Lock Screen
+super + shift + BackSpace
+	betterlockscreen -l dimblur
+
+# fdoc
+super + w
+	st -c fdoc -t fdoc -e fdoc
+
+# sleek
+super + question
+	sleek
+
+# Quit dwm
+super + shift + e
+	[ $(printf "yes\nno" | dmenu -l 2 -c -p "Quit dwm?") = "yes" ] && xsetroot -name "fsignal:1"; pkill dwmblocks
+
+super + shift + r
+	pkill dwmblocks; xsetroot -name "fsignal:2"
+
+super + c
+	st -c calcurse -t calcurse -e calcurse

@@ -1,0 +1,39 @@
+! Tokyonight colorscheme for personal dwm build
+
+dmenu.borderwidth:      3
+dmenu.font:     JetBrainsMono Nerd Font:size=13:style=Regular
+dmenu.normbgcolor:      #24283b
+dmenu.normbghicolor:    #24283b
+dmenu.normfgcolor:      #c0caf5
+dmenu.normfghicolor:    #f7768e
+dmenu.selbgcolor:       #414868
+dmenu.selbghicolor:     #414868
+dmenu.selfgcolor:       #c0caf5
+dmenu.selfghicolor:     #f7768e
+dwm.borderpx:   1
+dwm.col_blue:   #7aa2f7
+dwm.col_cyan:   #7dcfff
+dwm.col_green:  #9ece6a
+dwm.col_magenta:        #bb9af7
+dwm.col_red:    #f7768e
+dwm.col_yellow: #e0af68
+dwm.font:       JetBrains Mono:size=10:style=Bold
+dwm.gappx:      5
+dwm.infonormbgcolor:    #24283b
+dwm.infonormfgcolor:    #c0caf5
+dwm.infoselbgcolor:     #1D202F
+dwm.infoselfgcolor:     #c0caf5
+dwm.normbgcolor:        #24283b
+dwm.normbordercolor:    #24283b
+dwm.normfgcolor:        #c0caf5
+dwm.selbgcolor: #e0af68
+dwm.selbordercolor:     #7aa2f7
+dwm.selfgcolor: #1D202F
+dwm.snap:       32
+dwm.tagnormbgcolor:     #24283b
+dwm.tagnormfgcolor:     #414868
+dwm.tagoccbgcolor:      #24283b
+dwm.tagoccfgcolor:      #7aa2f7
+dwm.tagselbgcolor:      #414868
+dwm.tagselfgcolor:      #7dcfff
+dwm.user_bh:    40
