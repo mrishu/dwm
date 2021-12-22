@@ -29,6 +29,8 @@ static char tagselbgcolor[]         = "#005577";
 static char tagselfgcolor[]         = "#eeeeee";
 static char tagoccbgcolor[]         = "#222222";
 static char tagoccfgcolor[]         = "#005577";
+static char tagoccselbgcolor[]         = "#005577";
+static char tagoccselfgcolor[]         = "#eeeeee";
 
 static char infonormbgcolor[]       = "#222222";
 static char infonormfgcolor[]       = "#bbbbbb";
@@ -58,6 +60,7 @@ static char *colors[][3]      = {
     [SchemeTagsNorm]  = { tagnormfgcolor, tagnormbgcolor, "#000000" },
 	[SchemeTagsSel]  = { tagselfgcolor, tagselbgcolor, "#000000" },
 	[SchemeTagsOcc]  = { tagoccfgcolor, tagoccbgcolor, "#000000" },
+	[SchemeTagsOccSel] = { tagoccselfgcolor, tagoccselbgcolor, "#000000" }, 
     
     [SchemeInfoNorm]  = { infonormfgcolor, infonormbgcolor, "#000000" },
     [SchemeInfoSel]  = { infoselfgcolor, infoselbgcolor, "#000000" },
@@ -78,6 +81,7 @@ static const unsigned int alphas[][3]      = {
     [SchemeTagsNorm]  = { OPAQUE, baralpha, borderalpha },
 	[SchemeTagsSel]  = { OPAQUE, baralpha, borderalpha },
 	[SchemeTagsOcc]  = { OPAQUE, baralpha, borderalpha },
+	[SchemeTagsOccSel] = { OPAQUE, baralpha, borderalpha },
     
     [SchemeInfoNorm]  = { OPAQUE, baralpha, borderalpha },
     [SchemeInfoSel]  = { OPAQUE, baralpha, borderalpha },
@@ -145,6 +149,8 @@ ResourcePref resources[] = {
 		{ "tagselfgcolor",         STRING,  &tagselfgcolor },
 		{ "tagoccbgcolor",         STRING,  &tagoccbgcolor },
 		{ "tagoccfgcolor",         STRING,  &tagoccfgcolor },
+		{ "tagoccselbgcolor",         STRING,  &tagoccselbgcolor },
+		{ "tagoccselfgcolor",         STRING,  &tagoccselfgcolor },
         
 		{ "infonormbgcolor",        STRING,  &infonormbgcolor },
 		{ "infonormfgcolor",        STRING,  &infonormfgcolor },

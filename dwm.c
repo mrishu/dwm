@@ -63,7 +63,7 @@
 
 /* enums */
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
-enum { SchemeRed, SchemeGreen, SchemeYellow, SchemeBlue, SchemeMagenta, SchemeCyan, SchemeNorm, SchemeSel, SchemeTagsNorm, SchemeTagsSel, SchemeTagsOcc, SchemeInfoNorm, SchemeInfoSel }; /* color schemes */ 
+enum { SchemeRed, SchemeGreen, SchemeYellow, SchemeBlue, SchemeMagenta, SchemeCyan, SchemeNorm, SchemeSel, SchemeTagsNorm, SchemeTagsSel, SchemeTagsOcc, SchemeTagsOccSel, SchemeInfoNorm, SchemeInfoSel }; /* color schemes */ 
 enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
@@ -774,7 +774,10 @@ drawbar(Monitor *m)
 		w = TEXTW(tags[i]);
 		/* drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeTagsSel : SchemeTagsNorm]); */
         if (m->tagset[m->seltags] & 1 << i)
-            drw_setscheme(drw, scheme[SchemeTagsSel]);
+			if (occ & 1 << i)
+				drw_setscheme(drw, scheme[SchemeTagsOccSel]);
+			else
+				drw_setscheme(drw, scheme[SchemeTagsSel]);
         else if (occ & 1 << i)
             drw_setscheme(drw, scheme[SchemeTagsOcc]);
         else
