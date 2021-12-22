@@ -44,16 +44,9 @@ super + shift + BackSpace
 super + w
 	st -c fdoc -t fdoc -e fdoc
 
-# sleek
-super + question
-	sleek
-
 # Quit dwm
 super + shift + e
 	[ $(printf "yes\nno" | dmenu -l 2 -c -p "Quit dwm?") = "yes" ] && xsetroot -name "fsignal:1"; pkill dwmblocks
 
 super + shift + r
 	pkill dwmblocks; xsetroot -name "fsignal:2"
-
-super + c
-	st -c calcurse -t calcurse -e calcurse

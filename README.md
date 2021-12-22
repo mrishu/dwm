@@ -61,6 +61,7 @@ dwm-actualfullscreen-20211013-cb3f58a.diff
 ## Screenshots
 ![rice](https://0x0.st/-C5T.png)
 ![neofetch](https://0x0.st/-C5A.png)
+![dmenu](https://0x0.st/-C5B.png)
 
 ## Instrunctions
 1. `autostart.sh` is to be placed in `~/.local/share/dwm/`.
