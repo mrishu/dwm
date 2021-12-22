@@ -58,6 +58,10 @@ dwm-colorbar-6.2.diff                   dwm-xresources-20210827-138b405.diff
 dwm-actualfullscreen-20211013-cb3f58a.diff
 ```
 
+## Screenshots
+![rice](https://0x0.st/-C5T.png)
+![neofetch](https://0x0.st/-C5A.png)
+
 ## Instrunctions
 1. `autostart.sh` is to be placed in `~/.local/share/dwm/`.
 2. `sxhkdrc` is to be placed in `~/.config/sxhkd/`. (`sxhkd` must to be installed).
