@@ -73,6 +73,7 @@ dwm-actualfullscreen-20211013-cb3f58a.diff
 xrdb -merge ~/.Xresources
 ```
 and then restart dwm. This will apply Tokyonight colorscheme to dwm.
+
 6. Install _Feather_ font (available in my `dotfiles` repo in `fonts` directory), JetBrainsMono Nerd Font and 
 JetBrains Mono.
 
