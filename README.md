@@ -63,7 +63,7 @@ dwm-actualfullscreen-20211013-cb3f58a.diff
 ![neofetch](https://0x0.st/-C5A.png)
 ![dmenu](https://0x0.st/-C5B.png)
 
-## Instrunctions
+## Instructions
 1. `autostart.sh` (in `extras/`) is to be placed in `~/.local/share/dwm/`.
 2. `sxhkdrc` (in `extras/`) is to be placed in `~/.config/sxhkd/`. (`sxhkd` must to be installed).
 3. Install [`dwmblocks`](https://github.com/mrishu/dwmblocks).
