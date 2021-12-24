@@ -64,15 +64,16 @@ dwm-actualfullscreen-20211013-cb3f58a.diff
 ![dmenu](https://0x0.st/-C5B.png)
 
 ## Instrunctions
-1. `autostart.sh` is to be placed in `~/.local/share/dwm/`.
-2. `sxhkdrc` is to be placed in `~/.config/sxhkd/`. (`sxhkd` must to be installed).
+1. `autostart.sh` (in `extras/`) is to be placed in `~/.local/share/dwm/`.
+2. `sxhkdrc` (in `extras/`) is to be placed in `~/.config/sxhkd/`. (`sxhkd` must to be installed).
 3. Install [`dwmblocks`](https://github.com/mrishu/dwmblocks).
 4. Install [`dmenu`](https://github.com/mrishu/dmenu).
-5. _OPTIONAL_: Copy the contents of `dwm.xresources` to `~/.Xresources` file and run
+5. Copy the contents of `dwm.xresources` (in `extras/`) to `~/.Xresources` file and run
 ```
 xrdb -merge ~/.Xresources
 ```
-6. Install _Feather_ font (available in `dotfiles` repo in `fonts` directory), JetBrainsMono Nerd Font and 
+and then restart dwm. This will apply Tokyonight colorscheme to dwm.
+6. Install _Feather_ font (available in my `dotfiles` repo in `fonts` directory), JetBrainsMono Nerd Font and 
 JetBrains Mono.
 
 ## Drawbacks in Personal build
